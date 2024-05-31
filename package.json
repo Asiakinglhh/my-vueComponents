@@ -1,0 +1,64 @@
+{
+  "name": "my-components",
+  "version": "0.1.0",
+  "description": "个人组件库",
+  "author": "LHH",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "element-ui",
+    "components",
+    "ui",
+    "personal",
+    "antv",
+    "echarts",
+    "codemirror",
+    "table",
+    "form"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "codemirror": "^5.65.16",
+    "core-js": "^3.8.3",
+    "echarts": "^5.5.0",
+    "element-ui": "^2.15.14",
+    "lodash": "^4.17.21",
+    "vue": "^2.7.16",
+    "vue-codemirror": "^4.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "sass": "^1.77.4",
+    "sass-loader": "^14.2.1",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
