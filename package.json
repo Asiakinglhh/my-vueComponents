@@ -18,7 +18,8 @@
     "form"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve --open",
+    "start": "vue-cli-service serve --open",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -28,8 +29,10 @@
     "echarts": "^5.5.0",
     "element-ui": "^2.15.14",
     "lodash": "^4.17.21",
+    "sql-formatter": "^15.3.1",
     "vue": "^2.7.16",
-    "vue-codemirror": "^4.0.6"
+    "vue-codemirror": "^4.0.6",
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
