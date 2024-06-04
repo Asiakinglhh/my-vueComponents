@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <VisualChart />
+    <!-- <keep-alive> -->
+    <router-view />
+    <!-- </keep-alive> -->
   </div>
 </template>
 
 <script>
-import VisualChart from './views/VisualChart'
-
 export default {
-  name: 'App',
-  components: {
-    VisualChart
-  }
+  name: 'App'
 }
 </script>
 

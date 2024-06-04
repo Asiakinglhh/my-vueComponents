@@ -55,7 +55,7 @@ export default {
         },
         eventHandler: {
             type: Object,
-            default: () => {}
+            default: () => ({})
         },
         buttonText: {
             type: String,

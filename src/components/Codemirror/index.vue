@@ -41,24 +41,24 @@ export default {
       set(val) {
         this.$emit('update:value', val)
       }
-    }
-  },
-  cmOption() {
-    return {
-      tabSize: 2,
-      lineNumbers: true,
-      line: true,
-      styleActiveLine: true,
-      scrollbarStyle: 'overlay',
-      matchBrackets: true,
-      autoCloseBrackets: true,
-      gutters: ['CodeMirror-lint-markers'],
-      lint: true,
-      showHint: true,
-      hintOptions: {
-        completeSingle: false
-      },
-      ...this.option
+    },
+    cmOption() {
+      return {
+        tabSize: 2,
+        lineNumbers: true,
+        line: true,
+        styleActiveLine: true,
+        scrollbarStyle: 'overlay',
+        matchBrackets: true,
+        autoCloseBrackets: true,
+        gutters: ['CodeMirror-lint-markers'],
+        lint: true,
+        showHint: true,
+        hintOptions: {
+          completeSingle: false
+        },
+        ...this.option
+      }
     }
   },
   methods: {
