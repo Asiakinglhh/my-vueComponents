@@ -23,6 +23,10 @@ const constantRoutes = [
   {
     path: '/dialogform',
     component: () => import('@/views/DialogForm')
+  },
+  {
+    path: '/luckysheet',
+    component: () => import('@/views/LuckySheetPage')
   }
 ]
 

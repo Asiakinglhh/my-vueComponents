@@ -1,5 +1,13 @@
 <template>
   <div class="container">
+    <el-button
+      v-back
+      type="primary"
+      plain
+      icon="el-icon-arrow-left"
+    >
+      返回
+    </el-button>
     <Charts :option="chartOption" />
   </div>
 </template>

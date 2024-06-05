@@ -69,8 +69,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.vue-codemirror, >>> .CodeMirror {
+<style scoped>
+.vue-codemirror, ::v-deep .CodeMirror {
   height: 100%;
 }
 </style>

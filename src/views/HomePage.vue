@@ -3,7 +3,7 @@
     <el-descriptions
       title="组件demo"
       direction="vertical"
-      :column="5"
+      :column="6"
       border
     >
       <el-descriptions-item label="可视化">
@@ -50,6 +50,14 @@
           @click="$router.push('table')"
         >
           带分页表格
+        </el-button>
+      </el-descriptions-item>
+      <el-descriptions-item label="预览编辑excel">
+        <el-button
+          type="text"
+          @click="$router.push('luckysheet')"
+        >
+          luckysheet
         </el-button>
       </el-descriptions-item>
     </el-descriptions>
