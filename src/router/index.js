@@ -22,11 +22,23 @@ const constantRoutes = [
   },
   {
     path: '/dialogform',
-    component: () => import('@/views/DialogForm')
+    component: () => import('@/views/DialogFormPage')
   },
   {
     path: '/luckysheet',
     component: () => import('@/views/LuckySheetPage')
+  },
+  {
+    path: '/searchform',
+    component: () => import('@/views/SearchFormPage')
+  },
+  {
+    path: '/pagintable',
+    component: () => import('@/views/PaginTable')
+  },
+  {
+    path: '/dagchart',
+    component: () => import('@/views/DagChart')
   }
 ]
 

@@ -30,6 +30,7 @@
 import DialogForm from '@/components/DialogForm'
 
 export default {
+  name: 'DialogFormPage',
   components: { DialogForm },
   data() {
     return {

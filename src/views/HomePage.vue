@@ -47,7 +47,7 @@
       <el-descriptions-item label="表格">
         <el-button
           type="text"
-          @click="$router.push('table')"
+          @click="$router.push('pagintable')"
         >
           带分页表格
         </el-button>

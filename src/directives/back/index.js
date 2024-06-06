@@ -7,9 +7,9 @@ function handleClick(el, binding, vnode) {
 
 export default {
   bind(el, binding, vnode) {
-    el.addEventListener('click', ()=> handleClick(el, binding, vnode))
+    el.addEventListener('click', () => handleClick(el, binding, vnode))
   },
-  unbind(el, binding, vnode){
+  unbind(el, binding, vnode) {
     el.removeEventListener('click', () => handleClick(el, binding, vnode))
   }
 }

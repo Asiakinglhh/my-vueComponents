@@ -36,6 +36,7 @@ import LuckySheet from '@/components/LuckySheet'
 import { createSheetOpts, luckyDefaultOptions } from '@/components/LuckySheet/utils'
 
 export default {
+  name: 'LuckySheetPage',
   components: { LuckySheet },
   data() {
     return {

@@ -111,7 +111,7 @@ export default {
             this.clearCache()
             // 根据全局主题选择是否启用暗色横式
             const chartElement = this.$refs.chart
-            if (this.isDarkMode){
+            if (this.isDarkMode) {
                 instances.set(chartElement, echarts.init(chartElement, 'dark'))
             } else {
                 instances.set(chartElement, echarts.init(chartElement, 'customedTheme'))
