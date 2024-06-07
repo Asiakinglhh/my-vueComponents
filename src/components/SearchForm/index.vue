@@ -103,12 +103,12 @@ export default {
     }
   },
   created() {
-    this.formObj = {...this.formData}
+    this.formObj = { ...this.formData }
   },
   methods: {
     handleSearch() {
       this.loading = true
-      this.$emit('onSearch', {...this.formObj}, () => {
+      this.$emit('onSearch', { ...this.formObj }, () => {
         this.loading = false
       })
     }

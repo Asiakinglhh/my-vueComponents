@@ -123,10 +123,10 @@ export default {
           shape: 'custom-rect',
           label: '开始'
         }, {
-          shape:'custom-ellipse',
+          shape: 'custom-ellipse',
           label: '过程'
         }, {
-          shape:'custom-polygon',
+          shape: 'custom-polygon',
           label: '决策',
           attrs: {
             body: {
@@ -135,7 +135,7 @@ export default {
           }
         }],
         group2: [{
-          shape:'custom-polygon',
+          shape: 'custom-polygon',
           label: '数据',
           attrs: {
             body: {

@@ -6,58 +6,18 @@
       :column="6"
       border
     >
-      <el-descriptions-item label="可视化">
+      <el-descriptions-item
+        v-for="(item, index) in compLists"
+        :key="index"
+        :label="item.label"
+      >
         <el-button
+          v-for="(it, i) in item.children"
+          :key="i"
           type="text"
-          @click="$router.push('visualchart')"
+          @click="$router.push(it.route)"
         >
-          饼图
-        </el-button>
-      </el-descriptions-item>
-      <el-descriptions-item label="代码编辑器">
-        <el-button
-          type="text"
-          @click="$router.push('sqleditor')"
-        >
-          sql编辑器
-        </el-button>
-      </el-descriptions-item>
-      <el-descriptions-item label="antv/x6">
-        <el-button
-          type="text"
-          @click="$router.push('dagchart')"
-        >
-          Dag图
-        </el-button>
-      </el-descriptions-item>
-      <el-descriptions-item label="表单类">
-        <el-button
-          type="text"
-          @click="$router.push('searchform')"
-        >
-          查询表单
-        </el-button>
-        <el-button
-          type="text"
-          @click="$router.push('dialogform')"
-        >
-          弹窗表单
-        </el-button>
-      </el-descriptions-item>
-      <el-descriptions-item label="表格">
-        <el-button
-          type="text"
-          @click="$router.push('pagintable')"
-        >
-          带分页表格
-        </el-button>
-      </el-descriptions-item>
-      <el-descriptions-item label="预览编辑excel">
-        <el-button
-          type="text"
-          @click="$router.push('luckysheet')"
-        >
-          luckysheet
+          {{ it.text }}
         </el-button>
       </el-descriptions-item>
     </el-descriptions>
@@ -66,6 +26,25 @@
 
 <script>
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  data() {
+    return {
+      compLists: [
+        { label: '可视化', children: [
+          { route: 'visualchart', text: '饼图' },
+          { route: 'waterpond', text: '水位图' },
+          { route: 'scrollboard', text: '滚动列表' },
+        ] },
+        { label: '代码编辑器', children: [{ route: 'sqleditor', text: 'sql编辑器' }] },
+        { label: 'antv/x6', children: [{ route: 'dagchart', text: 'Dag图' }] },
+        { label: '表单类', children: [
+          { route: 'searchform', text: '查询表单' },
+          { route: 'dialogform', text: '弹窗表单' },
+        ] },
+        { label: '表格', children: [{ route: 'pagintable', text: '带分页表格' }] },
+        { label: '预览编辑excel', children: [{ route: 'luckysheet', text: 'luckysheet' }] },
+      ]
+    }
+  }
 }
 </script>

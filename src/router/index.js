@@ -39,6 +39,14 @@ const constantRoutes = [
   {
     path: '/dagchart',
     component: () => import('@/views/DagChart')
+  },
+  {
+    path: '/waterpond',
+    component: () => import('@/views/WaterPond')
+  },
+  {
+    path: '/scrollboard',
+    component: () => import('@/views/ScrollBoardPage')
   }
 ]
 

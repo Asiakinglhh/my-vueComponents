@@ -1,4 +1,4 @@
-const nodeAttrs ={
+const nodeAttrs = {
   body: {
     stroke: '#8f8f8f',
     strokeWidth: 1,

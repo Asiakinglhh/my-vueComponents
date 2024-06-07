@@ -3,7 +3,7 @@ import config from './config'
 import ContextMenuTool from './ContextMenuTool.jsx'
 import TooltipTool from './TooltipTool.jsx'
 
-Graph.registerNode('custom-rect',{
+Graph.registerNode('custom-rect', {
   inherit: 'rect',
   width: 100,
   height: 40,
@@ -12,7 +12,7 @@ Graph.registerNode('custom-rect',{
   tools: config.nodeTools
 }, true)
 
-Graph.registerNode('custom-ellipse',{
+Graph.registerNode('custom-ellipse', {
 inherit: 'ellipse',
 width: 100,
 height: 40,

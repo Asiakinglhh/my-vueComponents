@@ -14,7 +14,7 @@ import { Graph, Shape, Addon } from '@antv/x6'
 import config from './config'
 
 export default {
-  name:'GraphComponent',
+  name: 'GraphComponent',
   props: {
     options: {
       type: Object,
@@ -30,7 +30,7 @@ export default {
     },
     stencilOpts: {
       type: Object,
-      default:() => ({})
+      default: () => ({})
     },
     stencilNodes: {
       type: Object,
@@ -146,7 +146,7 @@ export default {
           graph.cleanSelection()
           graph.select(cells)
         })
-        .bindKey(['ctrl+x','meta+x'], () => {
+        .bindKey(['ctrl+x', 'meta+x'], () => {
           const cells = graph.getSelectedCells()
           if (!cells.length) return
           graph.cut()
@@ -154,7 +154,7 @@ export default {
         .bindKey(['ctrl+z', 'meta+z'], () => {
           graph.history.undo()
         })
-        .bindKey(['ctrl+y','metaty'], () => {
+        .bindKey(['ctrl+y', 'meta+y'], () => {
           graph.history.redo()
         })
         .bindKey('esc', () => {
@@ -162,7 +162,7 @@ export default {
             graph.cleanSelection()
           }
         })
-        .bindKey(['backspace','delete'], () => {
+        .bindKey(['backspace', 'delete'], () => {
           const cells = graph.getSelectedCells()
           if (!cells.length) return
           graph.removeCells(cells)

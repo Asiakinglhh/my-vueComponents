@@ -51,7 +51,7 @@ export default {
     },
     data: {
       type: Array,
-      default:() => []
+      default: () => []
     },
     size: {
       type: String,
@@ -70,7 +70,7 @@ export default {
       default: 20
     },
     total: {
-      type:Number,
+      type: Number,
       default: 0
     },
     pageSizes: {

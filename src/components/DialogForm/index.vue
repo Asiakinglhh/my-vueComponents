@@ -93,12 +93,12 @@ export default {
     }
   },
   created() {
-    this.formObj = {...this.formData}
+    this.formObj = { ...this.formData }
   },
   methods: {
     handleConfirm() {
       this.loading = true
-      this.$emit('onConfirm', {...this.formObj})
+      this.$emit('onConfirm', { ...this.formObj })
     },
     handleClose() {
       this.$emit('onCancel')
