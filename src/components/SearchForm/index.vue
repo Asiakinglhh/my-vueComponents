@@ -9,7 +9,13 @@
     label-suffix=":"
     v-bind="$attrs"
   >
-    <el-row>
+    <el-row
+      type="flex"
+      justify="center"
+    >
+      {{ $route.meta.title }}
+    </el-row>
+    <el-row v-show="showSearch">
       <el-col
         v-for="it in formOpts"
         :key="it.prop"
@@ -71,6 +77,19 @@
       >
         重置
       </el-button>
+      <el-tooltip
+        v-if="isControl"
+        :content="showSearch ? '隐藏搜索' : '显示搜索'"
+        placement="top"
+      >
+        <el-button
+          type="success"
+          plain
+          circle
+          icon="el-icon-s-operation"
+          @click="showSearch = !showSearch"
+        />
+      </el-tooltip>
     </el-row>
   </el-form>
 </template>
@@ -79,6 +98,10 @@
 export default {
   name: 'SearchForm',
   props: {
+    isControl: {
+      type: Boolean,
+      default: true
+    },
     formOpts: {
       type: Array,
       default: () => []
@@ -98,6 +121,7 @@ export default {
   },
   data() {
     return {
+      showSearch: true,
       formObj: undefined,
       loading: false
     }

@@ -10,43 +10,53 @@ const constantRoutes = [
   },
   {
     path: '/homepage',
-    component: () => import('@/views/HomePage')
+    component: () => import('@/views/HomePage'),
+    meta: { title: '首页' }
   },
   {
     path: '/visualchart',
-    component: () => import('@/views/VisualChart')
+    component: () => import('@/views/VisualChart'),
+    meta: { title: '饼图' }
   },
   {
     path: '/sqleditor',
-    component: () => import('@/views/SqlEditor')
+    component: () => import('@/views/SqlEditor'),
+    meta: { title: 'sql编辑器' }
   },
   {
     path: '/dialogform',
-    component: () => import('@/views/DialogFormPage')
+    component: () => import('@/views/DialogFormPage'),
+    meta: { title: '弹窗表单' }
   },
   {
     path: '/luckysheet',
-    component: () => import('@/views/LuckySheetPage')
+    component: () => import('@/views/LuckySheetPage'),
+    meta: { title: 'luckysheet' }
   },
   {
     path: '/searchform',
-    component: () => import('@/views/SearchFormPage')
+    component: () => import('@/views/SearchFormPage'),
+    meta: { title: '查询表单' }
   },
   {
     path: '/pagintable',
-    component: () => import('@/views/PaginTable')
+    component: () => import('@/views/PaginTable'),
+    meta: { title: '带分页表格' }
   },
   {
     path: '/dagchart',
-    component: () => import('@/views/DagChart')
+    component: () => import('@/views/DagChart'),
+    meta: { title: 'Dag图' }
   },
   {
     path: '/waterpond',
-    component: () => import('@/views/WaterPond')
+    component: () => import('@/views/WaterPond'),
+    meta: { title: '水位图' }
   },
   {
     path: '/scrollboard',
-    component: () => import('@/views/ScrollBoardPage')
+    component: () => import('@/views/ScrollBoardPage'),
+    meta: { title: '滚动列表' }
   }
 ]
 

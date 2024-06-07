@@ -10,6 +10,7 @@
     </el-button>
     <el-card>
       <SearchForm
+        is-control
         :form-opts="formOpts"
         :form-data="formData"
         @onSearch="search"

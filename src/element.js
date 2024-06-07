@@ -19,7 +19,8 @@ import {
   Card,
   Loading,
   Icon,
-  Dropdown
+  Dropdown,
+  Tooltip
 } from 'element-ui'
 
 Vue.prototype.$ELEMENT = { size: 'small' }
@@ -42,5 +43,6 @@ Vue.use(Col)
 Vue.use(Card)
 Vue.use(Icon)
 Vue.use(Dropdown)
+Vue.use(Tooltip)
 
 Vue.use(Loading.directive)
